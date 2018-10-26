@@ -57,7 +57,7 @@ export default {
             margin-right:10px;
             margin-top:-2px;
             .icon-user{
-                font-size:27px;
+                font-size:20px;
             }
         }
     }

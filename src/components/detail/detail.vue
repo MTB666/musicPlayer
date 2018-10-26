@@ -13,7 +13,7 @@
 
         <scroll class="detailScroll">
             <ul class="geqList">
-                <li class="item" v-for="itemDat of datail.songlist">
+                <li class="item" v-for="(itemDat,index) of datail.songlist" :key="index">
                     <h2 class="ellipsis">{{itemDat.songname}}</h2>
                     <p class="ellipsis">{{itemDat.albumname}}</p>
                 </li>
@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-    name:'tetail',
+    name:'detail',
     data(){
         return {
             Gqlist:[1,2,3,4,5,6,7,8,9,10],
@@ -70,7 +70,7 @@ export default {
                background:rgba(0,0,0,0.5);
            }
            i{position:absolute;left:20px;top:10px;font-size:30px;color:#ffff08;}
-           h5{position:absolute;left:0;top:14px;width:100%;text-align:center;font-size:24px;color:#fff;font-weight:500;}
+           h5{position:absolute;left:50%;top:14px;width:200px;margin-left:-100px;text-align:center;font-size:20px;color:#fff;font-weight:500;}
            img{width:100%;height:100%;}
            .sjbo{display:flex; flex-direction:row; align-items: center; justify-content: center;position:absolute;left:50%;bottom:24px;margin-left:-83px;width:164px;height:36px;border:1px solid #ffff08;border-radius:25px 25px;color:#ffff08;font-size:16px;
                 i{position:static;font-size:22px;margin-right:5px;}

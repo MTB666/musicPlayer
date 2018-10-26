@@ -7,7 +7,6 @@ import Rankpage from '@/components/rankpage/rankpage'
 import Singer from '@/components/singer/singer'
 import Search from '@/components/search/search'
 
-
 Vue.use(Router)
 
 export default new Router({
