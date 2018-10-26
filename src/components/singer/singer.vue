@@ -1,7 +1,7 @@
 <template>
   <div class="singerWrap">
       <scroll class="singerW" ref="scroll">
-          <div>
+          <div class="scrWrap">
               <div class="listItemW" v-for="item of singer" ref='sin-list-item'>
                   <h1>{{item.title}}</h1>
                   <ul class="listUlW">
@@ -38,7 +38,7 @@ export default {
     methods:{
         spanCli(itemData){
             this.$router.push({
-                path:'/omain/singer/singerdetail',
+                path:'/home/singer/singerdetail',
                 query:itemData
             })
         },
@@ -115,7 +115,7 @@ export default {
 
 <style lang="scss" scoped>
  .singerWrap{
-        flex: 1;
+        height:calc(100vh - 68px);
         display: flex;
         flex-direction: column;
         .singerW{
