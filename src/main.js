@@ -6,6 +6,8 @@ import router from './router'
 import axios from 'axios'
 import lazyload from 'vue-lazyload'
 import './assets/font/iconfont.css'
+import scroll from './components/base/scroll/scroll'
+import loading from './components/base/loading/loading'
 Vue.use(lazyload,{
   preLoad:1.3,
   loading:'../static/loading1.gif'
@@ -13,6 +15,9 @@ Vue.use(lazyload,{
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
+
+Vue.component(scroll.name,scroll);
+Vue.component(loading.name,loading);
 
 /* eslint-disable no-new */
 new Vue({

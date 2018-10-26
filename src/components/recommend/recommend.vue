@@ -10,7 +10,7 @@
       <!-- 热门推荐 -->
       <div class="hot-container">
           <h1 class="hot-name">热门歌单推荐</h1>
-          <!-- <loading class="loading" v-if="!hotlist.length"></loading> -->
+          <loading class="loading" v-if="!hotlist.length"></loading>
           <scroll class="hot-scroll">
             <ul class="hot-list">
                 <li v-for="(item) in hotlist" :key="item.dissid" @click="goDetails(item)">
@@ -79,6 +79,12 @@
             // this.$router.push({
             //     path:`/home/recommend/${4574438}`
             // })
+            this.$router.push({
+                path:"/home/recommend/recommendDetail",
+                query:{
+                    id:"4574438"
+                }
+            })
             /* 
                 this.$router.push({
                     path:"/home/recommend/hotdetails",

@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
-import Home from '../components/home/home'
-import Recommend from '../components/recommend/recommend'
-import Rankpage from  '../components/rankpage/rankpage'
-import Singer from '../components/singer/singer'
-import Search from '../components/search/search'
+import detail from '@/components/detail/detail'
+import Home from '@/components/home/home'
+import Recommend from '@/components/recommend/recommend'
+import Rankpage from '@/components/rankpage/rankpage'
+import Singer from '@/components/singer/singer'
+import Search from '@/components/search/search'
+
 Vue.use(Router)
 
 export default new Router({
@@ -25,7 +26,13 @@ export default new Router({
         },{
           path:'recommend',
           component:Recommend,
-          name:'recommend'
+          name:'recommend',
+          children:[
+            {
+              path:'recommendDetail',
+              component:detail
+            }
+          ]
         },{
           path:'rankpage',
           component:Rankpage,
@@ -33,7 +40,13 @@ export default new Router({
         },{
           path:'singer',
           component:Singer,
-          name:'singer'
+          name:'singer',
+          children:[
+            {
+              path:'singerdetail',
+              component:detail
+            }
+          ]
         },{
           path:'search',
           component:Search,
@@ -41,5 +54,6 @@ export default new Router({
         }
       ]
     }
+
   ]
 })
