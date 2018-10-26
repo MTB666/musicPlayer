@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import lazyload from 'vue-lazyload'
-
+import './assets/font/iconfont.css'
 Vue.use(lazyload,{
   preLoad:1.3,
   loading:'../static/loading1.gif'

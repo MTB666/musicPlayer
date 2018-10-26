@@ -14,8 +14,7 @@
             <li><router-link to="singer">歌手</router-link></li>
             <li><router-link to="rankpage">排行</router-link></li>
             <li><router-link to="search">搜索</router-link></li>
-        </ul>  .
-        .
+        </ul>
     </div>
 </template>
 <script>
@@ -58,7 +57,7 @@ export default {
             margin-right:10px;
             margin-top:-2px;
             .icon-user{
-                font-size:27px;
+                font-size:20px;
             }
         }
     }
