@@ -1,12 +1,8 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <router-view/>
-=======
     <!-- <img src="./assets/logo.png">
     <router-view/> -->
     <router-view></router-view>
->>>>>>> e6f1c4d7c9462cb5399d7976244ceb777daf33bb
   </div>
 </template>
 
